@@ -1,0 +1,32 @@
+#include <stdlib.h>
+#include <string.h>
+#include <gtk/gtk.h>
+
+i
+void on_clicked_Label1(GtkWidget *widget, gpointer data) {
+    GtkLabel *label = (GtkLabel*) data;
+    gtk_label_set_text(label, "START");
+    g_print("START Button Clicked\n");
+}
+void on_clicked_Label2(GtkWidget *widget, gpointer data) {
+    GtkLabel *label = (GtkLabel*) data;
+    gtk_label_set_text(label, "Instrucciones");
+    g_print("Instrucciones Button Clicked\n");
+}
+
+int main(int argc, char* argv[]) {
+    GtkBuilder *builder;
+    GtkWidget *Menu;
+    GtkWidget *Menu_label
+    GtkWidget *Acciones
+    GtkWidget *boton1;
+    GtkWidget *Label1
+    GtkWidget *boton2;
+    GtkWidget *label2;
+
+    gtk_init(&argc, &argv);
+
+    builder = gtk_builder_new_from_file(
+        '/home/arman3107/Documents
+        /juegogato/Menu.glade'//Aqui va el directorio de ubicacion//
+    );
